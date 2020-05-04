@@ -45,7 +45,6 @@ spec:
             privileged: true
           image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
           args:
-            - node
             - --endpoint=$(CSI_ENDPOINT)
             - --logtostderr
             - --v=5
